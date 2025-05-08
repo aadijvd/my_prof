@@ -1,0 +1,148 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+  }
+  
+  h1, h2, h3 {
+    font-weight: 600;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Navbar */
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .nav-link {
+    color: #ffffff !important;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #0d6efd !important;
+  }
+  
+  /* Hero Section */
+  header {
+    background: linear-gradient(to right, #0d6efd, #00bfff);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+  }
+  
+  header p {
+    font-size: 1.25rem;
+  }
+  
+  /* About Section */
+  #about img {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Projects Section */
+  .card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  /* Contact Section */
+  #contact input,
+  #contact textarea {
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+  }
+  
+  #contact button {
+    border-radius: 8px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #212529;
+    color: #ffffff;
+  }
+  
+  footer a {
+    color: #ffffff;
+    transition: color 0.3s ease;
+  }
+  
+  footer a:hover {
+    color: #0d6efd;
+  }
+  /* Video Header Styles */
+.video-header {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+  .video-container iframe {
+    width: 100vw;
+    height: 56.25vw; /* 16:9 aspect ratio */
+    min-height: 100vh;
+    min-width: 177.77vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .video-header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* dark overlay for text readability */
+    z-index: 1;
+  }
+  
+  .video-header .content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+  }
+  
